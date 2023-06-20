@@ -21,9 +21,12 @@ test('function read() resolve', async () => {
 //   expect.assertions(1);
 //   // buffer.mockReturnValue(new Error('Error'));
 //   // bufferView.mockReturnValue(6 / 0);
+//   // read().mockImplementation(() => reject());
+//   // const mockFn = read();
+//   // mockFn.mockImplementation(() => new Error('ReadError'));
 //   try {
 //     new Uint16Array(await read());
 //   } catch (err) {
-//     expect(err.massage).rejects.toEqual('ReadError');
+//     expect(err.massage).toEqual('ReadError');
 //   }
 // });
